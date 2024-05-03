@@ -13,7 +13,8 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,7 +32,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 bg-secondary d-none d-lg-block">
-                <a href="" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                <a href=""
+                    class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                     <h1 class="m-0 display-3 text-primary">Klean</h1>
                 </a>
             </div>
@@ -76,18 +78,18 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link active">Service</a>
-                            <a href="project.html" class="nav-item nav-link">Project</a>
+                            <a href="home" class="nav-item nav-link">Home</a>
+                            <a href="about" class="nav-item nav-link">About</a>
+                            <a href="service" class="nav-item nav-link active">Service</a>
+                            <a href="projects" class="nav-item nav-link">Project</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Latest Blog</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                    <a href="latestblog" class="dropdown-item">Latest Blog</a>
+                                    <a href="blogdetail" class="dropdown-item">Blog Detail</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="contact" class="nav-item nav-link">Contact</a>
                         </div>
                         <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Get A Quote</a>
                     </div>
@@ -125,26 +127,30 @@
                 <div class="col-lg-6">
                     <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Our Services</h6>
                     <h1 class="mb-4 section-title">Awesome Cleaning Services For You</h1>
-                    <p>Invidunt lorem justo clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
+                    <p>Invidunt lorem justo clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et
+                        dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
                     <a href="" class="btn btn-primary mt-3 py-2 px-4">More Services</a>
                 </div>
                 <div class="col-lg-6 pt-5 pt-lg-0">
                     <div class="owl-carousel service-carousel position-relative">
-                        <div class="d-flex flex-column align-items-center text-center bg-light rounded overflow-hidden pt-4">
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-light rounded overflow-hidden pt-4">
                             <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
                                 <i class="fa fa-2x fa-hotel"></i>
                             </div>
                             <h5 class="font-weight-bold mb-4 px-4">Home Cleaning</h5>
                             <img src="img/blog-1.jpg" alt="">
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-light rounded overflow-hidden pt-4">
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-light rounded overflow-hidden pt-4">
                             <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
                                 <i class="fa fa-2x fa-city"></i>
                             </div>
                             <h5 class="font-weight-bold mb-4 px-4">Window Cleaning</h5>
                             <img src="img/blog-3.jpg" alt="">
                         </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-light rounded overflow-hidden pt-4">
+                        <div
+                            class="d-flex flex-column align-items-center text-center bg-light rounded overflow-hidden pt-4">
                             <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
                                 <i class="fa fa-2x fa-spa"></i>
                             </div>
@@ -163,7 +169,8 @@
     <div class="container-fluid py-5 contact-info">
         <div class="row">
             <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
+                <div
+                    class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
                     <i class="fa fa-3x fa-map-marker-alt text-secondary mr-4"></i>
                     <div class="">
                         <h5 class="mb-2">Our Office</h5>
@@ -172,7 +179,8 @@
                 </div>
             </div>
             <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-secondary text-white py-4 py-lg-0">
+                <div
+                    class="contact-info-item d-flex align-items-center justify-content-center bg-secondary text-white py-4 py-lg-0">
                     <i class="fa fa-3x fa-envelope-open text-primary mr-4"></i>
                     <div class="">
                         <h5 class="mb-2">Email Us</h5>
@@ -181,7 +189,8 @@
                 </div>
             </div>
             <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
+                <div
+                    class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
                     <i class="fa fa-3x fa-phone-alt text-secondary mr-4"></i>
                     <div class="">
                         <h5 class="mb-2">Call Us</h5>
@@ -202,47 +211,52 @@
                     <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Testimonial</h6>
                     <h1 class="section-title mb-5">What Our Clients Say</h1>
                     <div class="owl-carousel testimonial-carousel position-relative">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5>Client Name</h5>
-                                    <i>Profession</i>
+                        @foreach ($comments as $comment)
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="img-fluid" src="img/testimonial-{{$comment->id}}.jpg" alt="">
+                                    <div class="ml-3">
+                                        <h5>{{$comment->fullname}}</h5>
+                                        <i>{{$comment->project_name}}</i>
+                                    </div>
                                 </div>
+                                <p>{{$comment->comment}}</p>
                             </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5>Client Name</h5>
-                                    <i>Profession</i>
-                                </div>
-                            </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5>Client Name</h5>
-                                    <i>Profession</i>
-                                </div>
-                            </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/testimonial.jpg"
+                            style="object-fit: cover;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Testimonial End -->
+
+    <!-- ========== Contact Form start ========== -->
+  <section class="contact" id="contact">
+    <h1 class="heading"> <span>Bog'lanish</span></h1>
+
+    <form action="">
+
+      <div class="inputBox">
+        <input type="text" name="" placeholder="Ism sharifingiz">
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="inputBox">
+        <input id="project_input" type="text" placeholder="Project Name">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Xabaringiz..."></textarea>
+      <input type="submit" value="Xabar jo'natish" class="button_junatish">
+
+    </form>
+  </section>
+
+  <!-- ========== Contact Form end ========== -->
 
 
     <!-- Footer Start -->
@@ -281,10 +295,12 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="font-weight-semi-bold text-primary mb-4">Newsletter</h4>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum.</p>
+                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu
+                    kasd sed ea duo ipsum.</p>
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-0" style="padding: 25px;" placeholder="Your Email">
+                        <input type="text" class="form-control border-0" style="padding: 25px;"
+                            placeholder="Your Email">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-4">Sign Up</button>
                         </div>
@@ -293,10 +309,12 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: #3E3E4E !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Your Site Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                <p class="m-0 text-white">&copy; <a href="#">Your Site Name</a>. All Rights Reserved. Designed
+                    by <a href="https://htmlcodex.com">HTML Codex</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">

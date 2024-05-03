@@ -76,18 +76,18 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link active">About</a>
-                            <a href="service.html" class="nav-item nav-link">Service</a>
-                            <a href="project.html" class="nav-item nav-link">Project</a>
+                            <a href="home" class="nav-item nav-link">Home</a>
+                            <a href="about" class="nav-item nav-link active">About</a>
+                            <a href="service" class="nav-item nav-link">Service</a>
+                            <a href="projects" class="nav-item nav-link">Project</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Latest Blog</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                    <a href="latestblog" class="dropdown-item">Latest Blog</a>
+                                    <a href="blogdetail" class="dropdown-item">Blog Detail</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="contact" class="nav-item nav-link">Contact</a>
                         </div>
                         <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Get A Quote</a>
                     </div>
@@ -217,70 +217,27 @@
             <div class="row">
                 <div class="col-12">
                     <div class="owl-carousel team-carousel position-relative">
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                        <div class="owl-carousel team-carousel position-relative">
+                            @foreach ($employees as $item)
+                                
+                            <div class="team d-flex flex-column text-center rounded overflow-hidden">
+                                <div class="position-relative">
+                                    <div class="team-img">
+                                        <img class="img-fluid w-100" src="img/team-{{$item->id}}.jpg" alt="">
+                                    </div>
+                                    <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
+                                        <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
                                 </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <div class="d-flex flex-column bg-primary text-center py-4">
+                                    <h5 class="font-weight-bold">{{$item->fullname}}</h5>
+                                    <p class="text-white m-0">{{$item->job_type}}</p>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
+                            @endforeach
+
                     </div>
                 </div>
             </div>

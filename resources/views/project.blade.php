@@ -76,18 +76,18 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Service</a>
-                            <a href="project.html" class="nav-item nav-link active">Project</a>
+                            <a href="home" class="nav-item nav-link">Home</a>
+                            <a href="about" class="nav-item nav-link">About</a>
+                            <a href="service" class="nav-item nav-link">Service</a>
+                            <a href="projects" class="nav-item nav-link active">Project</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Latest Blog</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                    <a href="latestblog" class="dropdown-item">Latest Blog</a>
+                                    <a href="blogdetail" class="dropdown-item">Blog Detail</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="contact" class="nav-item nav-link">Contact</a>
                         </div>
                         <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Get A Quote</a>
                     </div>
@@ -136,13 +136,15 @@
                 </div>
             </div>
             <div class="row m-0 portfolio-container">
+                @foreach ($projects as $project)
+                    
                 <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/portfolio-{{$project->id}}.jpg" alt="">
                         </div>
                         <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
+                            <h4 class="font-weight-bold mb-4">{{$project->name}}</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-sm btn-secondary m-1" href="">
                                     <i class="fa fa-link"></i>
@@ -154,7 +156,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
+                @endforeach
+                {{-- <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
                             <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
@@ -243,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         </div>

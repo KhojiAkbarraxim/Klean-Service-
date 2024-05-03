@@ -30,11 +30,11 @@
     <!-- Header Start -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 bg-secondary d-none d-lg-block">
+            <di+v class="col-lg-3 bg-secondary d-none d-lg-block">
                 <a href="" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                     <h1 class="m-0 display-3 text-primary">Klean</h1>
                 </a>
-            </div>
+            </di+v>
             <div class="col-lg-9">
                 <div class="row bg-dark d-none d-lg-flex">
                     <div class="col-lg-7 text-left text-white">
@@ -76,18 +76,18 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Service</a>
-                            <a href="project.html" class="nav-item nav-link">Project</a>
+                            <a href="home" class="nav-item nav-link active">Home</a>
+                            <a href="about" class="nav-item nav-link">About</a>
+                            <a href="service" class="nav-item nav-link">Service</a>
+                            <a href="projects" class="nav-item nav-link">Project</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Latest Blog</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                    <a href="latestblog" class="dropdown-item">Latest Blog</a>
+                                    <a href="blogdetail" class="dropdown-item">Blog Detail</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="contact" class="nav-item nav-link">Contact</a>
                         </div>
                         <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Get A Quote</a>
                     </div>
@@ -437,10 +437,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="owl-carousel team-carousel position-relative">
+                        @foreach ($employees as $item)
+                            
                         <div class="team d-flex flex-column text-center rounded overflow-hidden">
                             <div class="position-relative">
                                 <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                                    <img class="img-fluid w-100" src="img/team-{{$item->id}}.jpg" alt="">
                                 </div>
                                 <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
                                     <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -449,58 +451,11 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
+                                <h5 class="font-weight-bold">{{$item->fullname}}</h5>
+                                <p class="text-white m-0">{{$item->job_type}}</p>
                             </div>
                         </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">Full Name</h5>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -517,36 +472,19 @@
                     <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Testimonial</h6>
                     <h1 class="section-title text-white mb-5">What Our Clients Say</h1>
                     <div class="owl-carousel testimonial-carousel position-relative">
+                        @foreach ($comments as $item)
+                        
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <img class="img-fluid" src="img/testimonial-{{$item->id}}.jpg" alt="">
                                 <div class="ml-3">
-                                    <h5 class="text-primary">Client Name</h5>
-                                    <i>Profession</i>
+                                    <h5 class="text-primary">{{$item->fullname}}</h5>
+                                    <i>{{$item->project_name}}</i>
                                 </div>
                             </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div>
-                        <div class="d-flex flex-column text-white">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5 class="text-primary">Client Name</h5>
-                                    <i>Profession</i>
-                                </div>
-                            </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div>
-                        <div class="d-flex flex-column text-white">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5 class="text-primary">Client Name</h5>
-                                    <i>Profession</i>
-                                </div>
-                            </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div>
+                            <p>{{$item->comment}}</p>
+                        </div>    
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
@@ -725,6 +663,23 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script >
+                function getIp() {
+            $.ajax({
+                type: "GET",
+                data: {
+                    _token: "{{ csrf_token() }}",
+                    // poll_id: "1",
+                    // hasrated: "ss",  
+                },
+                url: 'http://127.0.0.1:8000/api/allpoll',
+                success: function(data) {
+                    console.log(data);
+                }
+            })
+        }
+        getIp();
+    </script>
 </body>
 
 </html>
